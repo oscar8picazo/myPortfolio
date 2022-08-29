@@ -1,0 +1,77 @@
+---
+import "bootstrap/dist/css/bootstrap-grid.css";
+import "../styles/global.scss";
+---
+<main>
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 gridTitle">
+                    <div>
+                        <h2 class="subtitle overlayAnimation" style="--time: 1s;">
+                            Hello,
+                        </h2>
+                        <h2 class="subtitle overlayAnimation" style="--time: 2s;">
+                            my name is
+                        </h2>
+                    </div>
+                    <h1 class="title overlayAnimation" style="--time: 4s;">
+                        OSCAR MORALES
+                    </h1>
+                    <div class="carousel overlayAnimation" style="--time: 6s;">
+                        <div class="pre">I am</div>
+                        <div class="change_outer">
+                            <div class="change_inner">
+                                <div class="element">
+                                    <h2>An Engineer</h2>
+                                </div>
+                                <div class="element">
+                                    <h2>A Developer</h2>
+                                </div>
+                                <div class="element">
+                                    <h2>Creative</h2>
+                                </div>
+                                <div class="element">
+                                    <h2>Adaptable</h2>
+                                </div>
+                                <div class="element">
+                                    <h2>Curious</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: --madder-lake;"></div>
+    </div>
+</main>
+
+<style>
+	.overlay {
+		position: absolute;
+		background-color: var(--black-chocolate);
+		min-height: 90%;
+		min-width: 100%;
+		color: #ffff;
+	}
+
+	.gridTitle {
+		position: inherit;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.subtitle {
+		display: table-cell;
+		font-weight: 400;
+		font-size: 2rem;
+		letter-spacing: -0.0525em;
+		padding-right: 0.8rem;
+	}
+
+	.title {
+		display: table-header-group;
+	}
+</style>
