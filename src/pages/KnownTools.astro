@@ -1,0 +1,83 @@
+---
+import "../styles/global.scss";
+import "bootstrap/dist/css/bootstrap-grid.css";
+---
+
+<div class="section knownTools">
+    <h1 class="title">Tools I've worked with</h1>
+    <div class="container-xxl ">
+        <div class="row align-items-center justify-content-center">
+            <div class="col">
+                <h3>BackEnd</h3>
+            </div>
+            <div class="col">
+                <h3>FrontEnd</h3>
+            </div>
+            <div class="col">
+                <h3>Databases</h3>
+            </div>
+            <div class="col">
+                <h3>Cloud</h3>
+            </div>
+            <div class="col">
+                <h3>Automation</h3>
+            </div>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+            <div class="col">
+                <img src="../public/tool-icons/nodejs.png"/>
+            </div>
+            <div class="col">
+                <img src="../public/tool-icons/reactjs.png"/>
+            </div>
+            <div class="col">
+                <img src="../public/tool-icons/postgres.png"/>
+            </div>
+            <div class="col">
+                <img src="../public/tool-icons/aws.png"/>
+            </div>
+            <div class="col">
+                <img src="../public/tool-icons/jenkins.png"/>
+            </div>
+        </div>
+        <div class="row my-5 align-items-center">
+            <div class="col">
+                <img src="../public/tool-icons/python.png"/>
+            </div>
+            <div class="col">
+                <img src="../public/tool-icons/astro.png"/>
+            </div>
+            <div class="col">
+                <img src="../public/tool-icons/dynamoDB.png"/>
+            </div>
+            <div class="col"/>
+            <div class="col"/>
+        </div>
+    </div>
+</div>
+
+<style>
+    .knownTools {
+        position: absolute;
+        background-color: var(--madder-lake);
+        color: #ffff;
+    }
+
+    .knownTools img {
+        max-height: 8rem;
+        margin: auto;
+        display: block;
+    }
+
+    .knownTools h3 {
+        background-color: var(--black-chocolate);
+        color: #ffff;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .title {
+        margin:  1.5rem;
+        font-size: 3rem;
+    }
+</style>

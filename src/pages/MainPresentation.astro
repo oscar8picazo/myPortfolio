@@ -13,10 +13,10 @@ import "../styles/global.scss";
                     my name is
                 </h2>
             </div>
-            <h1 class="title overlayAnimation" style="--time: 3s;">
+            <h1 class="title overlayAnimation" style="--time: 4s;">
                 OSCAR MORALES
             </h1>
-            <div class="carousel overlayAnimation" style="--time: 5s;">
+            <div class="carousel overlayAnimation" style="--time: 6s;">
                 <div class="pre">I am</div>
                 <div class="change_outer">
                     <div class="change_inner">
@@ -39,37 +39,22 @@ import "../styles/global.scss";
                 </div>
             </div>
         </div>
-        <div class="imgSide">
-            <img src="../public/assets/me.jpg" class="overlayAnimation" style="--time: 3s;"/>
-        </div>
     </div>
 </main>
 
 <style>
-    
 	.overlay {
-        min-height: 35rem;
+        min-height: 48rem;
 		background-color: var(--black-chocolate);
+		min-width: 100%;
 		color: #ffff;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 100%;
-        align-items: center; 
-        justify-items: center;
+        display: flex;
 	}
 
-    .overlay img {
-        width: 50%;
-        border-radius: 50%;
-        position: inherit;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%, 50%);
-    }
-
 	.gridTitle {
-		position: inherit;
-		
+		display: inline-block;
+        place-self: center;
+        margin: auto;
 	}
 
 	.subtitle {
@@ -83,10 +68,4 @@ import "../styles/global.scss";
 	.title {
 		display: table-header-group;
 	}
-
-    .imgSide {
-        height: 100%;
-        width: 100%;
-        background-color: var(--madder-lake);
-    }
 </style>

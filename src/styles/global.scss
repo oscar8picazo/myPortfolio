@@ -6,6 +6,11 @@
     --cadet-blue: #3c8087ff;
 }
 
+.section {
+    min-width: 100%;
+    min-height: 48rem;
+}
+
 .overlayAnimation {
     opacity: 0;
     animation: fadeInAnimation ease 2s;
