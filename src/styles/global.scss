@@ -29,6 +29,27 @@
     }
 }
 
+.hideTools {
+    animation: hideToolsAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideToolsAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+
+    100% {
+        display: none;
+    }
+}
+
 .carousel {
     position: relative;
     display: flex;

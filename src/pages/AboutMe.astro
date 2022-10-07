@@ -1,0 +1,60 @@
+---
+import "../styles/global.scss";
+import "@fontsource/annie-use-your-telescope";
+import "@fontsource/abel"
+---
+
+<div class=" section aboutMe" >
+    <div class="aboutMe-main">
+        <h1 class="aboutMe-title">About me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img src="../public/me.jpeg" />
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h3 >Hey! Thanks for stopping by :)</h3>
+                    <p >My name is Oscar, I majored as a mechatronics engineer at Tecnológico de Monterrey in 2021 and I currently have two years of experience working as a software engineer.</p>
+                    <p>I started my fascination for coding while studying, working on school projects or messing with different libraries just for fun. </p>
+                    <p>Today I consider myself as a well-rounded developer. I can help you create functional and pretty UIs, engineer that new API the company needs, or help you automate your service.</p>
+                    <p>My mantra: The sky is the limit!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffff);
+        color: var(--black-chocolate);
+    }
+
+    .aboutMe h3 {
+        font-family: "Annie Use Your Telescope", "normal";
+        font-size: 2.5rem;
+        margin: 0.5rem;
+    }
+
+    .aboutMe p {
+        font-family: "Abel", "normal";
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .aboutMe img {
+        max-width: 100%;
+    }
+
+    .aboutMe-main {
+        margin: 0 ;
+    }
+
+    .aboutMe-title {
+        margin: 1.5rem;
+        text-align: center;
+    }
+</style>

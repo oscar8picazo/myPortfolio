@@ -4,69 +4,82 @@ import "bootstrap/dist/css/bootstrap-grid.css";
 ---
 
 <div class="section knownTools">
-    <h1 class="title">Tools I've worked with</h1>
-    <div class="container-xxl ">
-        <div class="row align-items-center justify-content-center">
-            <div class="col">
-                <h3>BackEnd</h3>
+    <div id="knownTools-main">
+        <h1 class="title">Tools I've worked with</h1>
+        <div class="container-xxl">
+            <div class="row align-items-center justify-content-center">
+                <div class="col">
+                    <h3>BackEnd</h3>
+                </div>
+                <div class="col">
+                    <h3>FrontEnd</h3>
+                </div>
+                <div class="col">
+                    <h3>Databases</h3>
+                </div>
+                <div class="col">
+                    <h3>Automation</h3>
+                </div>
+                <div class="col">
+                    <h3>Cloud</h3>
+                </div>
             </div>
-            <div class="col">
-                <h3>FrontEnd</h3>
+            <div class="row my-5 align-items-center justify-content-center">
+                <div class="col">
+                    <img
+                        src="../public/tool-icons/nodejs.png"
+                        onclick="() => {
+                            console.log('nodejs');
+                            document.getElementById('knownTools-main').className = 'hideTools';
+                        }"
+                    />
+                </div>
+                <div class="col">
+                    <img src="../public/tool-icons/reactjs.png" />
+                </div>
+                <div class="col">
+                    <img src="../public/tool-icons/postgres.png" />
+                </div>
+                <div class="col">
+                    <img src="../public/tool-icons/jenkins.png" />
+                </div>
+                <div class="col">
+                    <img src="../public/tool-icons/aws.png" />
+                </div>
             </div>
-            <div class="col">
-                <h3>Databases</h3>
+            <div class="row my-5 align-items-center">
+                <div class="col">
+                    <img src="../public/tool-icons/python.png" />
+                </div>
+                <div class="col">
+                    <img src="../public/tool-icons/astro.png" />
+                </div>
+                <div class="col">
+                    <img src="../public/tool-icons/dynamoDB.png" />
+                </div>
+                <div class="col">
+                    <img src="../public/tool-icons/terraform.png" />
+                </div>
+                <div class="col"></div>
             </div>
-            <div class="col">
-                <h3>Cloud</h3>
-            </div>
-            <div class="col">
-                <h3>Automation</h3>
-            </div>
-        </div>
-        <div class="row my-5 align-items-center justify-content-center">
-            <div class="col">
-                <img src="../public/tool-icons/nodejs.png"/>
-            </div>
-            <div class="col">
-                <img src="../public/tool-icons/reactjs.png"/>
-            </div>
-            <div class="col">
-                <img src="../public/tool-icons/postgres.png"/>
-            </div>
-            <div class="col">
-                <img src="../public/tool-icons/aws.png"/>
-            </div>
-            <div class="col">
-                <img src="../public/tool-icons/jenkins.png"/>
-            </div>
-        </div>
-        <div class="row my-5 align-items-center">
-            <div class="col">
-                <img src="../public/tool-icons/python.png"/>
-            </div>
-            <div class="col">
-                <img src="../public/tool-icons/astro.png"/>
-            </div>
-            <div class="col">
-                <img src="../public/tool-icons/dynamoDB.png"/>
-            </div>
-            <div class="col"/>
-            <div class="col"/>
         </div>
     </div>
 </div>
 
 <style>
     .knownTools {
-        position: absolute;
+        display: flex;
+        flex-direction: column;
         background-color: var(--madder-lake);
         color: #ffff;
     }
 
     .knownTools img {
-        max-height: 8rem;
+        max-height: 10rem;
         margin: auto;
         display: block;
+        background-color: #ffff;
+        border-radius: 50%;
     }
 
     .knownTools h3 {
@@ -77,7 +90,8 @@ import "bootstrap/dist/css/bootstrap-grid.css";
     }
 
     .title {
-        margin:  1.5rem;
+        text-align: center;
+        margin: 1.5rem;
         font-size: 3rem;
     }
 </style>

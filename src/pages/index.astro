@@ -1,16 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import "bootstrap/dist/css/bootstrap-grid.css";
 import "../styles/global.scss";
 
 import MainPresentation from "./MainPresentation.astro"
 import KnownTools from "./KnownTools.astro";
+import AboutMe from "./aboutMe.astro";
+import MiniMenu from "./MiniMenu.astro";
+import Footer from "./Footer.astro";
 ---
 
 <Layout title="Oscar Morales">
+	<MiniMenu />
 	<MainPresentation />
+	<AboutMe />
 	<KnownTools />
+	<Footer />
 </Layout>
 
 <style>
