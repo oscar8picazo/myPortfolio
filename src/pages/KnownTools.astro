@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap-grid.css";
 <div class="section knownTools">
     <div id="knownTools-main">
         <h1 class="title">Tools I've worked with</h1>
-        <div class="container-xxl containerDesktop">
+        <div class="container-fluid containerDesktop">
             <div class="row align-items-center justify-content-center">
                 <div class="col">
                     <h3>BackEnd</h3>
@@ -133,13 +133,14 @@ import "bootstrap/dist/css/bootstrap-grid.css";
 
     .containerDesktop {
         margin-top: 10vh;
+        max-width: 85vw;
     }
 
     .fit-width {
         max-width: fit-content;
     }
 
-    @media (max-width: 600px), (pointer:none), (pointer:coarse) { 
+    @media (max-width: 800px)  { 
         .containerDesktop {
             display: none;
         }
@@ -147,6 +148,7 @@ import "bootstrap/dist/css/bootstrap-grid.css";
         .containerMobile {
             display: block;
             margin-top: 10vh;
+            max-width: fit-content;
         }
 
         .knownTools img {
@@ -154,7 +156,7 @@ import "bootstrap/dist/css/bootstrap-grid.css";
     }
     }
 
-    @media (min-width: 601px) { 
+    @media (min-width: 801px) { 
         .knownTools img {
             max-width: 11vw;
     }
