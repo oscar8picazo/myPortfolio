@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap-grid.css";
 <div class="section knownTools">
     <div id="knownTools-main">
         <h1 class="title">Tools I've worked with</h1>
-        <div class="container-xxl">
+        <div class="container-xxl containerDesktop">
             <div class="row align-items-center justify-content-center">
                 <div class="col">
                     <h3>BackEnd</h3>
@@ -26,13 +26,7 @@ import "bootstrap/dist/css/bootstrap-grid.css";
             </div>
             <div class="row my-5 align-items-center justify-content-center">
                 <div class="col">
-                    <img
-                        src="../public/tool-icons/nodejs.png"
-                        onclick="() => {
-                            console.log('nodejs');
-                            document.getElementById('knownTools-main').className = 'hideTools';
-                        }"
-                    />
+                    <img src="../public/tool-icons/nodejs.png" />
                 </div>
                 <div class="col">
                     <img src="../public/tool-icons/reactjs.png" />
@@ -63,6 +57,45 @@ import "bootstrap/dist/css/bootstrap-grid.css";
                 <div class="col"></div>
             </div>
         </div>
+        <div class="container containerMobile">
+            <div class="row justify-content-center">
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/nodejs.png" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/reactjs.png" />
+                </div>
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/python.png" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/postgres.png" />
+                </div>
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/aws.png" />
+                </div>
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/jenkins.png" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/dynamoDB.png" />
+                </div>
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/astro.png" />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col fit-width">
+                    <img src="../public/tool-icons/terraform.png" />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -75,7 +108,6 @@ import "bootstrap/dist/css/bootstrap-grid.css";
     }
 
     .knownTools img {
-        max-height: 10rem;
         margin: auto;
         display: block;
         background-color: #ffff;
@@ -94,4 +126,38 @@ import "bootstrap/dist/css/bootstrap-grid.css";
         margin: 1.5rem;
         font-size: 3rem;
     }
+
+    .containerMobile {
+        display: none;
+    }
+
+    .containerDesktop {
+        margin-top: 10vh;
+    }
+
+    .fit-width {
+        max-width: fit-content;
+    }
+
+    @media (max-width: 600px), (pointer:none), (pointer:coarse) { 
+        .containerDesktop {
+            display: none;
+        }
+
+        .containerMobile {
+            display: block;
+            margin-top: 10vh;
+        }
+
+        .knownTools img {
+            max-height: 10vh;
+    }
+    }
+
+    @media (min-width: 601px) { 
+        .knownTools img {
+            max-width: 11vw;
+    }
+    }
+
 </style>

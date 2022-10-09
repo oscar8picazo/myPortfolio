@@ -8,8 +8,8 @@ import "@fontsource/abel"
     <div class="aboutMe-main">
         <h1 class="aboutMe-title">About me</h1>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
                     <img src="../public/me.jpeg" />
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -49,12 +49,37 @@ import "@fontsource/abel"
         max-width: 100%;
     }
 
+    @media (max-width: 600px) {
+        .aboutMe img {
+            max-width: 80%;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .aboutMe p {
+        font-family: "Abel", "normal";
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .aboutMe h3 {
+        font-family: "Annie Use Your Telescope", "normal";
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+
+    .aboutMe-main {
+        padding: 2rem ;
+    }
+    }
+
     .aboutMe-main {
         margin: 0 ;
     }
 
     .aboutMe-title {
         margin: 1.5rem;
+        margin-bottom: 3rem;
         text-align: center;
     }
 </style>

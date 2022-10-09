@@ -44,12 +44,19 @@ import "../styles/global.scss";
 
 <style>
 	.overlay {
-        min-height: 48rem;
+        min-height: 96vh;
 		background-color: var(--black-chocolate);
 		min-width: 100%;
 		color: #ffff;
         display: flex;
 	}
+
+    @media (max-width: 600px) { 
+        .overlay {
+            min-height: 100vh;
+        }
+    }
+
 
 	.gridTitle {
 		display: inline-block;

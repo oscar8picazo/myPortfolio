@@ -8,7 +8,7 @@
 
 .section {
     min-width: 100%;
-    min-height: 48rem;
+    min-height: 100vh;
 }
 
 .overlayAnimation {
@@ -107,4 +107,30 @@
     95% {
         transform: translateY(-0.9rem);
     } 
+}
+
+@media (max-width: 600px) {
+    @keyframes rotate {
+        0%, 8%, 100% {
+            transform: translateY(-1rem);
+        } 
+        16%, 24% {
+            transform: translateY(-5rem);
+        } 
+        32%, 40% {
+            transform: translateY(-9rem);
+        } 
+        48%, 56% {
+            transform: translateY(-13rem);
+        } 
+        64%, 72% {
+            transform: translateY(-16.8rem);
+        }
+        75% {
+            transform: translateY(-17.3rem);
+        }
+        95% {
+            transform: translateY(-0.6rem);
+        } 
+    }
 }
