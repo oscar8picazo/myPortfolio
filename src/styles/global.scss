@@ -7,7 +7,7 @@
 }
 
 .section {
-    min-width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
 }
 
@@ -109,28 +109,54 @@
     } 
 }
 
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
     @keyframes rotate {
         0%, 8%, 100% {
-            transform: translateY(-1rem);
+            transform: translateY(-6.5%);
         } 
         16%, 24% {
-            transform: translateY(-5rem);
+            transform: translateY(-26.6%);
         } 
         32%, 40% {
-            transform: translateY(-9rem);
+            transform: translateY(-48.8%);
         } 
         48%, 56% {
-            transform: translateY(-13rem);
+            transform: translateY(-69.6%);
         } 
         64%, 72% {
-            transform: translateY(-16.8rem);
+            transform: translateY(-91.6%);
         }
         75% {
-            transform: translateY(-17.3rem);
+            transform: translateY(-100%);
         }
         95% {
-            transform: translateY(-0.6rem);
+            transform: translateY(-1%);
+        } 
+    }
+} 
+
+@media (min-width: 601px) and (max-width: 960px) {
+    @keyframes rotate {
+        0%, 8%, 100% {
+            transform: translateY(-7%);
+        } 
+        16%, 24% {
+            transform: translateY(-28%);
+        } 
+        32%, 40% {
+            transform: translateY(-50%);
+        } 
+        48%, 56% {
+            transform: translateY(-70%);
+        } 
+        64%, 72% {
+            transform: translateY(-92%);
+        }
+        75% {
+            transform: translateY(-100%);
+        }
+        95% {
+            transform: translateY(0%);
         } 
     }
 }

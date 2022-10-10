@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap-grid.css";
 import "../styles/global.scss";
 ---
 <main>
+    <div class="signifier">
+        <img class="circle" src="circle.svg"/>
+    </div>
     <div class="overlay">
         <div class="gridTitle">
             <div>
@@ -13,10 +16,10 @@ import "../styles/global.scss";
                     my name is
                 </h2>
             </div>
-            <h1 class="title overlayAnimation" style="--time: 4s;">
+            <h1 class="title overlayAnimation" style="--time: 3.5s;">
                 OSCAR MORALES
             </h1>
-            <div class="carousel overlayAnimation" style="--time: 6s;">
+            <div class="carousel overlayAnimation" style="--time: 5.5s;">
                 <div class="pre">I am</div>
                 <div class="change_outer">
                     <div class="change_inner">
@@ -46,7 +49,7 @@ import "../styles/global.scss";
 	.overlay {
         min-height: 96vh;
 		background-color: var(--black-chocolate);
-		min-width: 100%;
+		min-width: 100vw;
 		color: #ffff;
         display: flex;
 	}
@@ -75,4 +78,64 @@ import "../styles/global.scss";
 	.title {
 		display: table-header-group;
 	}
+
+    .signifier {
+        position:absolute;
+        right: 43vw;
+        bottom: 20vh;
+    }
+
+    .circle {
+        position: sticky;
+        display: none;
+        width: 12vw;
+        filter: invert(100%) sepia(71%) saturate(0%) hue-rotate(349deg) brightness(115%) contrast(101%);
+        animation: scrollBlur ease 2.5s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-delay: 9s;
+        z-index: 11;
+        opacity: 0;
+    }
+
+    @keyframes scrollBlur {
+        20% {
+            opacity: 1;
+        }
+
+        40% {
+            filter: blur(2px) invert(100%) sepia(71%) saturate(0%) hue-rotate(349deg) brightness(115%) contrast(101%);
+        }
+
+        65% {
+            filter: blur(0) invert(100%) sepia(71%) saturate(0%) hue-rotate(349deg) brightness(115%) contrast(101%);
+            transform: translateY(-8rem);
+            opacity: 1;
+        }
+
+        90% {
+            opacity: 0;
+            transform: translateY(-8rem);
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        .circle {
+            display: flex;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 960px) {
+        .circle {
+            display: flex;
+            width: 2.5rem
+        }
+
+        .signifier {
+        position:absolute;
+        right: 85vw;
+        bottom: 20vh;
+    }
+     }
 </style>
